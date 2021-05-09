@@ -53,6 +53,13 @@ jobs:
         run: cd src/frontend
 
     # Runs a single command using the runners shell
+      - name: testCypress 
+        run: |          
+          cd src/frontend
+          npm install
+          npm install cypress
+          npm run cypress
+    
       - name: Cypress run --spec ../../test/*.js
         uses: cypress-io/github-action@v2
         with:
