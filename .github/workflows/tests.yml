@@ -77,4 +77,5 @@ jobs:
       - name: publish image
         run: |
           cd src
+          ls -a
           docker push bizjak3/testni:prvaIzdaja
