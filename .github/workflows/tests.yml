@@ -79,5 +79,7 @@ jobs:
           cd src
           ls -a
           docker tag redis bizjak3/testni
+          docker tag mariadb bizjak3/testni:tag
           docker login -p 'Vp&LLPQJdES6RXc' -u 'bizjak3'
           docker push bizjak3/testni
+          docker push bitjak3/testni:tag
