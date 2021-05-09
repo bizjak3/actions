@@ -56,5 +56,5 @@ jobs:
           cd src/frontend
           npm install
           npm install cypress
-          npx run cypress --record --key ef968037-c896-44ec-af65-e9b18b9d00e7
+          npx run cypress 
     
