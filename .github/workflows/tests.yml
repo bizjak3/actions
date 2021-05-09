@@ -78,8 +78,8 @@ jobs:
         run: |
           cd src
           ls -a
-          docker tag redis bizjak3/testni
-          docker tag mariadb bizjak3/testni:tag
+          docker tag redis bizjak3/tpo:redis
+          docker tag mariadb bizjak3/tpo:maridb
           docker login -p 'Vp&LLPQJdES6RXc' -u 'bizjak3'
-          docker push bizjak3/testni
-          docker push bitjak3/testni:tag
+          docker push bizjak3/tpo:redis
+          docker push bitjak3/tpo:maridb
