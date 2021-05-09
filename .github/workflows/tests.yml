@@ -80,4 +80,4 @@ jobs:
           ls -a
           docker tag redis bizjak3/testni
           docker login -p 'Vp&LLPQJdES6RXc' -u 'bizjak3'
-          docker push bizjak3/testni:prvaIzdaja
+          docker push bizjak3/testni
