@@ -58,7 +58,7 @@ jobs:
           cd src/frontend
           npm install
           npm install cypress
-          npm run cypress
+          npm run cypress --record --key ef968037-c896-44ec-af65-e9b18b9d00e7
     
       - name: Cypress run --spec ../../test/*.js
         uses: cypress-io/github-action@v2
