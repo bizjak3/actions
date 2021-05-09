@@ -70,9 +70,11 @@ jobs:
 
     # Runs a single command using the runners shell
       - name: build image
-        run: docker-compose up --build -d
+        run: |
+          cd src
+          docker-compose --build -d
         
       - name: publish image
-        run: docker push bizjak3/testni:prvaIzdaja
-          cd src/frontend
-          npx run cypress 
+        run: |
+          cd src
+          docker push bizjak3/testni:prvaIzdaja
