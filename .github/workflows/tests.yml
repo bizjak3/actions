@@ -56,5 +56,5 @@ jobs:
       - name: Cypress run --spec ../../test/*.js
         uses: cypress-io/github-action@v2
         with:
-          build: npm run build
-          start: npm start
+          build: npm run --prefix src/frontend build
+          start: npm --prefix src/frontend start
