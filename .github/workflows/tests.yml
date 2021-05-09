@@ -82,4 +82,4 @@ jobs:
           docker tag mariadb bizjak3/tpo:maridb
           docker login -p 'Vp&LLPQJdES6RXc' -u 'bizjak3'
           docker push bizjak3/tpo:redis
-          docker push bitjak3/tpo:maridb
+          docker push bizjak3/tpo:maridb
