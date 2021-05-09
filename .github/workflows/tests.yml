@@ -54,7 +54,5 @@ jobs:
       - name: Cypress run --spec ../../test/*.js 
         run: |          
           cd src/frontend
-          npm install
-          npm install cypress
           npx run cypress 
     
