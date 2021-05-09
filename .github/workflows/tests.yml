@@ -72,7 +72,7 @@ jobs:
       - name: build image
         run: |
           cd src
-          docker-compose --build -d
+          docker-compose build
         
       - name: publish image
         run: |
