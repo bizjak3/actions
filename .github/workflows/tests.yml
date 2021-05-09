@@ -71,15 +71,15 @@ jobs:
     # Runs a single command using the runners shell
       - name: build image
         run: |
-          cd src
-          docker-compose up -d
+          cd src/backend
+          docker-compose up -d          
         
       - name: publish image
         run: |
           cd src
           ls -a
-          docker tag redis bizjak3/tpo:redis
-          docker tag mariadb bizjak3/tpo:maridb
+          docker tag redis bizjak3/testni:redis
+          docker tag mariadb bizjak3/testni:maridb
           docker login -p 'Vp&LLPQJdES6RXc' -u 'bizjak3'
-          docker push bizjak3/tpo:redis
-          docker push bizjak3/tpo:maridb
+          docker push bizjak3/testni:redis
+          docker push bizjak3/testni:maridb
